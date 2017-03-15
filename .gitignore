@@ -8,6 +8,7 @@ __pycache__/
 *.egg
 *.egg-info/
 *.sqlite3
+*.odt#
 .ipynb_checkpoints/
 .cache/
 .coverage
