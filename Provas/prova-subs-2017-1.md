@@ -57,9 +57,55 @@ $$
 e responda às questões:
 
 a) (0,5) Resolva este sistema utilizando a eliminação de Gauss *sem* pivoteamento.
+## Resposta:
+Escalonando a matriz abaixo:
+|1  2 = 0|
+|2  2 = 1|
+
+Obtém-se a seguinte matriz:
+|1  2  = 0|
+|0 -2  = 1|
+
+Logo, temos o sistema:
+1X + 2Y = 0
+0X - 2Y = 1
+
+Isolando y, temos:
+y = -0,5
+
+Sunstituindo Y e Isolando X, temos:
+x = 1
 
 b) (0,5) Resolva este sistema utilizando a eliminação de Gauss *com* pivoteamento.
-
+## Resposta:
+Pivoteando a matriz abaixo:
+<center>
+|1  2 = 0|
+|2  2 = 1|
+</center>
+Obtém-se:
+<center>
+|2  2 = 0|
+|1  2 = 0|
+</center>
+Escalonando a matriz pivoteada, obtém-se:
+<center>
+|2  2 = 1|
+|0 -2 = 1|
+</center>
+Logo, temos o sistema:
+<center>
+2X + 2Y = 1
+0X - 2Y = 1
+</center>
+Isolando y, temos:
+<center>
+y = -0,5
+</center>
+Sunstituindo Y e Isolando X, temos:
+<center>
+x = 1
+</center>
 
 ## Q2. Aproximações (3,0 pts)
 
