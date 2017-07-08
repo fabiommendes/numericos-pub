@@ -100,33 +100,47 @@ Pivoteando a matriz abaixo:
 |2  2 = 1|
 </pre>
 </center>
+
 Obtém-se:
+
 <center>
 <pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |2  2 = 0|
 |1  2 = 0|
 </pre>
 </center>
+
 Escalonando a matriz pivoteada, obtém-se:
+
 <center>
 <pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |2  2 = 1|
 |0 -2 = 1|
 </pre>
 </center>
+
 Logo, temos o sistema:
+
 <center>
 <pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 2X + 2Y = 1
 0X - 2Y = 1
+</pre>
 </center>
+
 Isolando y, temos:
+
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 y = -0,5
+</pre>
 </center>
+
 Sunstituindo Y e Isolando X, temos:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 x = 1
+</pre>
 </center>
 
 ## Q2. Aproximações (3,0 pts)
