@@ -59,12 +59,27 @@ e responda às questões:
 a) (0,5) Resolva este sistema utilizando a eliminação de Gauss *sem* pivoteamento.
 ## Resposta:
 Escalonando a matriz abaixo:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|1  2 = 0|
+|2  2 = 1
+</pre>
+</center>
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |1  2 = 0|
 |2  2 = 1|
+</pre>
+</center>
 
 Obtém-se a seguinte matriz:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |1  2  = 0|
 |0 -2  = 1|
+</pre>
+</center>
 
 Logo, temos o sistema:
 1X + 2Y = 0
@@ -80,21 +95,28 @@ b) (0,5) Resolva este sistema utilizando a eliminação de Gauss *com* pivoteame
 ## Resposta:
 Pivoteando a matriz abaixo:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |1  2 = 0|
 |2  2 = 1|
+</pre>
 </center>
 Obtém-se:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |2  2 = 0|
 |1  2 = 0|
+</pre>
 </center>
 Escalonando a matriz pivoteada, obtém-se:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 |2  2 = 1|
 |0 -2 = 1|
+</pre>
 </center>
 Logo, temos o sistema:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 2X + 2Y = 1
 0X - 2Y = 1
 </center>
