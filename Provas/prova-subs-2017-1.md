@@ -82,14 +82,26 @@ Obtém-se a seguinte matriz:
 </center>
 
 Logo, temos o sistema:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 1X + 2Y = 0
 0X - 2Y = 1
+</pre>
+</center>
 
 Isolando y, temos:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 y = -0,5
+</pre>
+</center>
 
 Sunstituindo Y e Isolando X, temos:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 x = 1
+</pre>
+</center>
 
 b) (0,5) Resolva este sistema utilizando a eliminação de Gauss *com* pivoteamento.
 ## Resposta:
