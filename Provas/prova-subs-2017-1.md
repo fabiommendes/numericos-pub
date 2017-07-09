@@ -171,44 +171,96 @@ a) (1,0) Calcule o polinômio interpolador utilizando o método que achar mais a
 ## Resposta
 Utilizando o método de Lagrange
 Sendo:
-
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 <center>
 $${P}_{2}(X) = {Y}_{0}*{L}_{0}(X) + {Y}_{1}*{L}_{1}(X) + {Y}_{2}*{L}_{2}(X)$$
 </center>
+</pre>
 
 Então temos L0:
-
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{0}(X) = \dfrac{(X-{X}_{1})*(X-{X}_{2})}{({X}_{0}-{X}_{1})*({X}_{0}-{X}_{2})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{0}(X) = \dfrac{(X-1)*(X-2)}{(0-1)*(0-2)}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{0}(X) = \dfrac{{X}^{2}-3*X+2}{2}$$
+</pre>
 </center>
 
 L1:
 
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{1}(X) = \dfrac{(X-{X}_{0})*(X-{X}_{2})}{({X}_{1}-{X}_{0})*({X}_{1}-{X}_{2})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{1}(X) = \dfrac{(X-0)*(X-2)}{(1-0)*(1-2)}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{1}(X) = -{X}^{2}+2*X$$
+</pre>
 </center>
 
 L2:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{2}(X) = \dfrac{(X-{X}_{0})*(X-{X}_{1})}{({X}_{2}-{X}_{0})*({X}_{2}-{X}_{1})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{2}(X) = \dfrac{(X-0)*(X-1)}{(2-0)*(2-1)}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 ${L}_{2}(X) = \dfrac{{X}^{2}-X}{2}$$
+</pre>
 </center>
 
 Logo, temos o polinomio:
 <center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${P}_{2}(X) = 2*\dfrac{{X}^{2}-3*X+2}{2}+(-{X}^{2}+2*X)+3*\dfrac{{X}^{2}-X}{2}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${P}_{2}(X) = \dfrac{3*{X}^{2}}{2}-\dfrac{5*X}{2} + 2$$
+</pre>
 </center>
 
 
 b) (1,0) Utilize a regra de Simpson para encontrar uma aproximação da integral 
 da função no intervalo de 0 até 2. O resultado é o mesmo da integral analítica
 realizada com o polinômio interpolador?
+##Resposta
+
+Resolvendo pela Regra de Simpson, com h=1:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{s} = \dfrac{h}{3}*[f({X}_{0})+4*f({X}_{1})+f({X}_{2})]$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{s} = \dfrac{1}{3}*[2+4+3]$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{s} = 3$$
+</pre>
+</center>
+
+Resolvendo de forma analítica:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$\int_{0}^{2} \dfrac{3*{X}^{2}}{2}-\dfrac{5*X}{2}+2 $$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$\left. \dfrac{3*{X}^{3}}{6} - \dfrac{5*{X}^{2}}{4} + 2*X\right|_{0}^{2}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$(\dfrac{3*{2}^{3}}{6} - \dfrac{5*{2}^{2}}{4} + 2*2) - \dfrac{3*{0}^{3}}{6} - \dfrac{5*{0}^{2}}{4} + 2*0 = 3$$
+</pre>
+</center>
+
+Concluindo que tanto analiticamente quanto pela regra de simpson chega-se à 3
 
 c) (1,0) Calcule a aproximação utilizando a regra do trapézio composta nos
 pontos dados. O resultado é o mesmo?
