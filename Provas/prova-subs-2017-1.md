@@ -178,7 +178,7 @@ $${P}_{2}(X) = {Y}_{0}*{L}_{0}(X) + {Y}_{1}*{L}_{1}(X) + {Y}_{2}*{L}_{2}(X)$$
 </pre>
 
 Então temos L0:
-<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+
 <center>
 <pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $${L}_{0}(X) = \dfrac{(X-{X}_{1})*(X-{X}_{2})}{({X}_{0}-{X}_{1})*({X}_{0}-{X}_{2})}$$
