@@ -264,7 +264,26 @@ Concluindo que tanto analiticamente quanto pela regra de simpson chega-se à 3
 
 c) (1,0) Calcule a aproximação utilizando a regra do trapézio composta nos
 pontos dados. O resultado é o mesmo?
+##Resposta
 
+Pela regra do trapézio com h=1:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = \dfrac{h}{2}*[f({X}_{0})+f({X}_{1})]+\dfrac{h}{2}*[f({X}_{1})+f({X}_{2})]$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = \dfrac{h}{2}*[f({X}_{0})+2*f({X}_{1})+f({X}_{2})]$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = \dfrac{1}{2}*[2+2+3]$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = 3,5$$
+</pre>
+</center>
+
+O valor, apesar de ser próximo, não é o mesmo que os encontrados na letra B
 
 ## Q3. Tableau de Runge Kutta (2,0 pts)
 
