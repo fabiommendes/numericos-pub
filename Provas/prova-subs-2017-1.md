@@ -330,6 +330,85 @@ Calcule o máximo da função $f(x) = x exp(x)$ numericamente utilizando o méto
 de Newton. Você deve começa no ponto inicial $x=0$ e realizar o número de 
 iterações necessário para que a solução possua 2 casas de precisão.
 
+## Reposta
+Temos o F'(x):
+$$f'(X) = -{e}^{-X}*(X-1)$$
+
+E o F''(x):
+$$f''(X) = {e}^{-X}*(X-2)$$	
+
+Com X0 = 0, temos X1:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = {X}_{0}-\dfrac{f'({X}_{0})}{f''({X}_{0})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = 0-\dfrac{1}{-2}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = \dfrac{1}{2}$$
+</pre>
+</center>
+
+Com X1 = 1/2, temos X2:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = {X}_{1}-\dfrac{f'({X}_{1})}{f''({X}_{1})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = 0,5-\dfrac{0,30326}{-0,90979}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = 0,8333$$
+</pre>
+</center>
+
+Com X2 = 0,8333, temos X3:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{3} = {X}_{2}-\dfrac{f'({X}_{2})}{f''({X}_{2})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{3} = 0,8333-\dfrac{0,07244}{-0,50706}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{3} = 0,9761$$
+</pre>
+</center>
+
+Com X3 = 0,9761, temos X4:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{4} = {X}_{3}-\dfrac{f'({X}_{3})}{f''({X}_{3})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{4} = 0,9761-\dfrac{0,00900}{-0,38578}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{4} = 0,9994$$
+</pre>
+</center>
+
+Com X4 = 0,9994, temos X5:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{5} = {X}_{4}-\dfrac{f'({X}_{4})}{f''({X}_{4})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{5} = 0,9994-\dfrac{0,00022}{-0,36832}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{5} = 0,9999$$
+</pre>
+</center>
+
+Logo, podemos atribuir X = 0.99 com duas casas de precisão
+
 
 ## Q5. Raízes de funções (2,0 pts)
 
