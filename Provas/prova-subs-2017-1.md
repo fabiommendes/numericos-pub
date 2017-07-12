@@ -57,9 +57,103 @@ $$
 e responda às questões:
 
 a) (0,5) Resolva este sistema utilizando a eliminação de Gauss *sem* pivoteamento.
+## Resposta:
+Escalonando a matriz abaixo:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|1  2 = 0|
+|2  2 = 1
+</pre>
+</center>
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|1  2 = 0|
+|2  2 = 1|
+</pre>
+</center>
+
+Obtém-se a seguinte matriz:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|1  2  = 0|
+|0 -2  = 1|
+</pre>
+</center>
+
+Logo, temos o sistema:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+1X + 2Y = 0
+0X - 2Y = 1
+</pre>
+</center>
+
+Isolando y, temos:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+y = -0,5
+</pre>
+</center>
+
+Sunstituindo Y e Isolando X, temos:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+x = 1
+</pre>
+</center>
 
 b) (0,5) Resolva este sistema utilizando a eliminação de Gauss *com* pivoteamento.
+## Resposta:
+Pivoteando a matriz abaixo:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|1  2 = 0|
+|2  2 = 1|
+</pre>
+</center>
 
+Obtém-se:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|2  2 = 0|
+|1  2 = 0|
+</pre>
+</center>
+
+Escalonando a matriz pivoteada, obtém-se:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+|2  2 = 1|
+|0 -2 = 1|
+</pre>
+</center>
+
+Logo, temos o sistema:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+2X + 2Y = 1
+0X - 2Y = 1
+</pre>
+</center>
+
+Isolando y, temos:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+y = -0,5
+</pre>
+</center>
+
+Sunstituindo Y e Isolando X, temos:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+x = 1
+</pre>
+</center>
 
 ## Q2. Aproximações (3,0 pts)
 
@@ -74,14 +168,136 @@ Considere o conjunto de pontos abaixo e responda às questões
 </center>
 
 a) (1,0) Calcule o polinômio interpolador utilizando o método que achar mais adequado.
+## Resposta
+Utilizando o método de Lagrange
+Sendo:
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+<center>
+$${P}_{2}(X) = {Y}_{0}*{L}_{0}(X) + {Y}_{1}*{L}_{1}(X) + {Y}_{2}*{L}_{2}(X)$$
+</center>
+</pre>
+
+Então temos L0:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{0}(X) = \dfrac{(X-{X}_{1})*(X-{X}_{2})}{({X}_{0}-{X}_{1})*({X}_{0}-{X}_{2})}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{0}(X) = \dfrac{(X-1)*(X-2)}{(0-1)*(0-2)}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{0}(X) = \dfrac{{X}^{2}-3*X+2}{2}$$
+</pre>
+</center>
+
+L1:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{1}(X) = \dfrac{(X-{X}_{0})*(X-{X}_{2})}{({X}_{1}-{X}_{0})*({X}_{1}-{X}_{2})}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{1}(X) = \dfrac{(X-0)*(X-2)}{(1-0)*(1-2)}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{1}(X) = -{X}^{2}+2*X$$
+</pre>
+</center>
+
+L2:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{2}(X) = \dfrac{(X-{X}_{0})*(X-{X}_{1})}{({X}_{2}-{X}_{0})*({X}_{2}-{X}_{1})}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{2}(X) = \dfrac{(X-0)*(X-1)}{(2-0)*(2-1)}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+${L}_{2}(X) = \dfrac{{X}^{2}-X}{2}$$
+</pre>
+</center>
+
+Logo, temos o polinomio:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${P}_{2}(X) = 2*\dfrac{{X}^{2}-3*X+2}{2}+(-{X}^{2}+2*X)+3*\dfrac{{X}^{2}-X}{2}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${P}_{2}(X) = \dfrac{3*{X}^{2}}{2}-\dfrac{5*X}{2} + 2$$
+</pre>
+</center>
+
 
 b) (1,0) Utilize a regra de Simpson para encontrar uma aproximação da integral 
 da função no intervalo de 0 até 2. O resultado é o mesmo da integral analítica
 realizada com o polinômio interpolador?
+## Resposta
+
+Resolvendo pela Regra de Simpson, com h=1:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{s} = \dfrac{h}{3}*[f({X}_{0})+4*f({X}_{1})+f({X}_{2})]$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{s} = \dfrac{1}{3}*[2+4+3]$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{s} = 3$$
+</pre>
+</center>
+
+Resolvendo de forma analítica:
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$\int_{0}^{2} \dfrac{3*{X}^{2}}{2}-\dfrac{5*X}{2}+2 $$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$\left. \dfrac{3*{X}^{3}}{6} - \dfrac{5*{X}^{2}}{4} + 2*X\right|_{0}^{2}$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$(\dfrac{3*{2}^{3}}{6} - \dfrac{5*{2}^{2}}{4} + 2*2) - \dfrac{3*{0}^{3}}{6} - \dfrac{5*{0}^{2}}{4} + 2*0 = 3$$
+</pre>
+</center>
+
+Concluindo que tanto analiticamente quanto pela regra de simpson chega-se à 3
 
 c) (1,0) Calcule a aproximação utilizando a regra do trapézio composta nos
 pontos dados. O resultado é o mesmo?
+## Resposta
 
+Pela regra do trapézio com h=1:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = \dfrac{h}{2}*[f({X}_{0})+f({X}_{1})]+\dfrac{h}{2}*[f({X}_{1})+f({X}_{2})]$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = \dfrac{h}{2}*[f({X}_{0})+2*f({X}_{1})+f({X}_{2})]$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = \dfrac{1}{2}*[2+2+3]$$
+</pre>
+
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${I}_{T} = 3,5$$
+</pre>
+</center>
+
+O valor, apesar de ser próximo, não é o mesmo que os encontrados na letra B
 
 ## Q3. Tableau de Runge Kutta (2,0 pts)
 
@@ -113,6 +329,85 @@ dadas e com um passo temporal de $\tau = 1/3$.
 Calcule o máximo da função $f(x) = x exp(x)$ numericamente utilizando o método
 de Newton. Você deve começa no ponto inicial $x=0$ e realizar o número de 
 iterações necessário para que a solução possua 2 casas de precisão.
+
+## Reposta
+Temos o F'(x):
+$$f'(X) = -{e}^{-X}*(X-1)$$
+
+E o F''(x):
+$$f''(X) = {e}^{-X}*(X-2)$$	
+
+Com X0 = 0, temos X1:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = {X}_{0}-\dfrac{f'({X}_{0})}{f''({X}_{0})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = 0-\dfrac{1}{-2}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = \dfrac{1}{2}$$
+</pre>
+</center>
+
+Com X1 = 1/2, temos X2:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = {X}_{1}-\dfrac{f'({X}_{1})}{f''({X}_{1})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = 0,5-\dfrac{0,30326}{-0,90979}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = 0,8333$$
+</pre>
+</center>
+
+Com X2 = 0,8333, temos X3:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{3} = {X}_{2}-\dfrac{f'({X}_{2})}{f''({X}_{2})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{3} = 0,8333-\dfrac{0,07244}{-0,50706}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{3} = 0,9761$$
+</pre>
+</center>
+
+Com X3 = 0,9761, temos X4:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{4} = {X}_{3}-\dfrac{f'({X}_{3})}{f''({X}_{3})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{4} = 0,9761-\dfrac{0,00900}{-0,38578}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{4} = 0,9994$$
+</pre>
+</center>
+
+Com X4 = 0,9994, temos X5:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{5} = {X}_{4}-\dfrac{f'({X}_{4})}{f''({X}_{4})}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{5} = 0,9994-\dfrac{0,00022}{-0,36832}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{5} = 0,9999$$
+</pre>
+</center>
+
+Logo, podemos atribuir X = 0.99 com duas casas de precisão
 
 
 ## Q5. Raízes de funções (2,0 pts)
