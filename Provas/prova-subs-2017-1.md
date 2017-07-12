@@ -332,10 +332,20 @@ iterações necessário para que a solução possua 2 casas de precisão.
 
 ## Reposta
 Temos o F'(x):
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $$f'(X) = -{e}^{-X}*(X-1)$$
+</pre>
+</center>
 
 E o F''(x):
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $$f''(X) = {e}^{-X}*(X-2)$$	
+</pre>
+</center>
 
 Com X0 = 0, temos X1:
 
@@ -422,7 +432,7 @@ Sendo:
 <center>
 <pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $$X*{e}^{X} = 1$$
-
+</pre>
 <pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $$X*{e}^{X}-1 = 0$$
 </pre>
