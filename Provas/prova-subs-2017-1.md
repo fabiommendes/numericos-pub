@@ -423,10 +423,20 @@ iterações necessário para que a solução possua 2 casas de precisão.
 
 ## Reposta
 Temos o F'(x):
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $$f'(X) = -{e}^{-X}*(X-1)$$
+</pre>
+</center>
 
 E o F''(x):
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
 $$f''(X) = {e}^{-X}*(X-2)$$	
+</pre>
+</center>
 
 Com X0 = 0, temos X1:
 
@@ -505,3 +515,78 @@ Logo, podemos atribuir X = 0.99 com duas casas de precisão
 
 A função $W(x)$ é definida implicitamente pela solução da equação $x = W \exp{W}$. Utilize o método de busca de raízes de funções para obter uma estimativa do valor
 de W(1) com 2 casas de precisão.
+
+## Resposta
+
+Sendo:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$X*{e}^{X} = 1$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$X*{e}^{X}-1 = 0$$
+</pre>
+</center>
+
+Então:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$F(X)=X*{e}^{X}-1$$
+</pre>
+</center>
+
+E:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$F'(X)=(X+1)*{e}^{X}$$
+</pre>
+</center>
+
+Como X de N+1 é:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{n+1} = {X}_{n}-\dfrac{F({X}_{n})}{F'({X}_{n})}$$
+</pre>
+</center>
+
+Então substituindo os valores de F(x) e F1(x):
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{n+1} = {X}_{n}-\dfrac{{X}_{n}*{e}^{{X}_{n}}-1}{({X}_{n}+1)*{e}^{{X}_{n}}}$$
+</pre>
+</center>
+
+Considerando:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${e}^{0} = 1$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${e}^{1} = 2,71828$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{0} = 0,5$$
+</pre>
+</center>
+
+Temos:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = 0,5672$$
+</pre>
+</center>
+
+e
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{2} = 0,5671$$
+</pre>
+</center>
