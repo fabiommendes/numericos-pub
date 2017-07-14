@@ -320,9 +320,100 @@ de valor inicial $x(0) = 1, x'(0) = 0$
 
 a) (0,5) Converta a EDO acima em um sistema de primeira ordem.
 
+## Resposta
+
+Calculando a derivada da função:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$\dfrac{{d}^{2}X}{d{t}^{2}} + \dfrac{dX}{dt} + X = 0$$
+</pre>
+</center>
+
+E temos X(0) e X'(0):
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$X(0) = 1$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$X'(0) = 0$$
+</pre>
+</center>
+
+Então é possível obter o sistema:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$u => \dfrac{dX}{dt} = v$$
+$$u => \dfrac{dv}{dt} = -X - v$$
+</pre>
+</center>
+
 b) (1,5) Realize a primeira iteração do método RK4 para as condições iniciais 
 dadas e com um passo temporal de $\tau = 1/3$.
 
+## Resposta
+
+Sabendo que:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$X(0) = 1 => {X}_{0}=1$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$v(0) = 0 => {v}_{0}=0$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$$h = \dfrac{1}{3}$$
+</pre>
+</center>
+
+Encontramos os K e os L da regra de range kutta:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${K}_{0} = h*F({X}_{0}, {v}_{0}) = \dfrac{1}{3}*0 = 0$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{0} = h*g({X}_{0}, {v}_{0}) = \dfrac{1}{3}*(-1-0) = -\dfrac{1}{3}$$
+</pre>
+</center>
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${K}_{1} = h*F({X}_{0}+\dfrac{1}{2}*{K}_{0}, {v}_{0}+\dfrac{1}{2}*{L}_{0}) = \dfrac{1}{3}*(0+(-\dfrac{1}{6})) = -\dfrac{1}{18}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{1} = h*g({X}_{0}+\dfrac{1}{2}*{K}_{0}, {v}_{0}+\dfrac{1}{2}*{L}_{0}) = \dfrac{1}{3}*(-1+(\dfrac{1}{6})) = -\dfrac{5}{18}$$
+</pre>
+</center>
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${K}_{2} = h*F({X}_{0}+\dfrac{1}{2}*{K}_{1}, {v}_{0}+\dfrac{1}{2}*{L}_{1}) = \dfrac{1}{3}*(-\dfrac{5}{36})) = -\dfrac{5}{108}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{2} = h*g({X}_{0}+\dfrac{1}{2}*{K}_{1}, {v}_{0}+\dfrac{1}{2}*{L}_{1}) = \dfrac{1}{3}*(-\dfrac{35}{36}-(-\dfrac{5}{36})) = -\dfrac{5}{18}$$
+</pre>
+</center>
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${K}_{3} = h*F({X}_{0}+{K}_{2}, {v}_{0}+{L}_{2}) = \dfrac{1}{3}*(-\dfrac{5}{18}) = -\dfrac{5}{54}$$
+</pre>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${L}_{3} = h*g({X}_{0}+{K}_{2}, {v}_{0}+{L}_{2}) = \dfrac{1}{3}*(-\dfrac{103}{108}+(\dfrac{5}{18})) = -\dfrac{75}{324}$$
+</pre>
+</center>
+
+Logo, temos:
+
+<center>
+<pre style="padding: 1em; width: 16em; margin: 1em auto; font-size: 1em">
+$${X}_{1} = {X}_{0}+\dfrac{1}{6}*({k}_{0}+2*{k}_{1}+2*{k}_{2}+{k}_{3}) = \dfrac{77}{81}$$
+</pre>
+</center>
 
 ## Q4. Método de Newton (2,0 pts)
 
