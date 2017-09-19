@@ -1,11 +1,11 @@
-Métodos numéricos
+Métodos Numéricos
 =================
 
 Professores: Fábio Mendes e Felipe Duerno (Faculdade UnB/Gama)
 
-Repositório público para a disciplina de métodos numéricos para a engenharia 1/2017 turmas A e D.
+Repositório público para a disciplina de métodos numéricos para a engenharia 2/2017 turmas A e D.
 
-Instruções gerais
+Instruções Gerais
 -----------------
 
 O curso de métodos numéricos é dado em Python 3 e portanto exige que cada aluno instale um ambiente 
